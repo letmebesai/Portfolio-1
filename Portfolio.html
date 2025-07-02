@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CHINTAPENTA SAI SRINIVAS | Portfolio</title>
+  <style>
+    :root {
+      --bg-light: #f0f2f5;
+      --bg-dark: #1e1e2f;
+      --text-light: #1e1e2f;
+      --text-dark: #f4f4f9;
+      --accent: #4f46e5;
+      --card-light: #ffffff;
+      --card-dark: #2c2c3a;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      transition: background-color 0.3s ease, color 0.3s ease;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: auto;
+      padding: 2rem;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+
+    header h1 {
+      margin-bottom: 0.5rem;
+    }
+
+    header a {
+      margin: 0 0.5rem;
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    section {
+      margin-bottom: 2rem;
+      padding: 1rem;
+      border-radius: 8px;
+      background-color: var(--card-light);
+    }
+
+    .dark-mode section {
+      background-color: var(--card-dark);
+    }
+
+    h2 {
+      color: var(--accent);
+      border-bottom: 1px solid var(--accent);
+      padding-bottom: 0.3rem;
+    }
+
+    ul {
+      list-style-type: disc;
+      padding-left: 1.5rem;
+    }
+
+    .dark-mode {
+      background-color: var(--bg-dark);
+      color: var(--text-dark);
+    }
+
+    .light-mode {
+      background-color: var(--bg-light);
+      color: var(--text-light);
+    }
+
+    .toggle-mode {
+      position: fixed;
+      top: 1rem;
+      right: 1rem;
+      padding: 0.5rem 1rem;
+      cursor: pointer;
+      background-color: var(--accent);
+      color: white;
+      border: none;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
+    }
+
+    .toggle-mode:hover {
+      background-color: #3b3bbc;
+    }
+  </style>
+</head>
+<body class="light-mode">
+  <button class="toggle-mode" onclick="toggleMode()">Toggle Mode</button>
+  <div class="container">
+    <header>
+      <h1>CHINTAPENTA SAI SRINIVAS</h1>
+      <p>
+        <a href="mailto:srinivassai438@gmail.com">srinivassai438@gmail.com</a> |
+        <a href="https://www.linkedin.com/in/sai-srinivas-chintapenta-2b74aa1b3/">LinkedIn</a> |
+        <a href="https://github.com/letmebesai">GitHub</a>
+      </p>
+    </header>
+
+    <section>
+      <h2>Profile</h2>
+      <p>
+        ECE undergrad passionate about tech, ML, and development. Experienced in real-world software
+        solutions, team collaboration, and research. Seeking to build impactful applications and
+        contribute to smart tech innovations.
+      </p>
+    </section>
+
+    <section>
+      <h2>Projects</h2>
+      <ul>
+        <li>
+          <strong>Task Complexity Classifier (Python + Streamlit)</strong><br />
+          NLP-based task prediction with TF-IDF, lemmatization, and RandomForest. Real-time UI for predictions.
+        </li>
+        <li>
+          <strong>Outfit Hub (MERN E-commerce)</strong><br />
+          Full-stack app with catalog, cart, orders. REST APIs, JWT auth, MongoDB backend, React frontend.
+        </li>
+        <li>
+          <strong>Inventory Manager (C++)</strong><br />
+          CLI inventory tracker with linked list, file I/O. Add, update, delete, search product records.
+        </li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Research</h2>
+      <p>
+        Working on AI-powered agricultural system for smart farming – integrating IoT, ML, weather forecasts,
+        soil and crop health prediction using LSTM/CNN models (2025 – Ongoing).
+      </p>
+    </section>
+
+    <section>
+      <h2>Education</h2>
+      <ul>
+        <li>SASTRA University, B.Tech ECE – 2022–Present</li>
+        <li>FIITJEE World School, Hyderabad – 12th, 96%</li>
+        <li>DAV Public School, Hyderabad – 10th, 95%</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Technical Skills</h2>
+      <ul>
+        <li>Languages: C++, Python, Java, JavaScript</li>
+        <li>Development: MERN Stack (MongoDB, Express, React, Node.js), HTML, CSS, JavaScript</li>
+        <li>Libraries/Frameworks: Scikit-learn, Pandas, NumPy, NLTK, TF-IDF</li>
+        <li>Tools: Streamlit, Git, Jupyter, VS Code, Excel</li>
+        <li>Concepts: OOP, DSA, Regression, Classification, Deployment</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Non-Technical Skills</h2>
+      <ul>
+        <li>Time Management</li>
+        <li>Problem Solving</li>
+        <li>Critical Thinking</li>
+        <li>Team Collaboration</li>
+        <li>Leadership</li>
+        <li>Communication</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Achievements & Certifications</h2>
+      <ul>
+        <li>4th place – Daksh 2025 Hackathon (IoT + Embedded) — <em>SASTRA University</em></li>
+        <li>Oracle APEX & IoT Workshops — <em>SASTRA University</em></li>
+        <li>Completed Udemy courses: Data Science Bootcamp, Machine Learning with Python/R, AI with Python</li>
+      </ul>
+    </section>
+  </div>
+
+  <script>
+    function toggleMode() {
+      const body = document.body;
+      body.classList.toggle("dark-mode");
+      body.classList.toggle("light-mode");
+    }
+  </script>
+</body>
+</html>
